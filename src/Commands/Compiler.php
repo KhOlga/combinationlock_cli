@@ -41,14 +41,21 @@ class Compiler extends Command
 			}
 
 			$phar = new Phar($pharFile);
+
 			$phar->startBuffering();
+
 			$defaultStub = $phar->createDefaultStub('index.php');
+
 			$phar->buildFromDirectory('combinationlock');
+
 			$stub = "#!/usr/bin/env php \n" . $defaultStub;
+
 			$phar->setStub($stub);
 			$phar->stopBuffering();
 			$phar->compressFiles(Phar::GZ);
+
 			chmod('combinationlock.phar', 0770);
+
 			$io->success("'$pharFile' successfully created!");
 
 		} else {
