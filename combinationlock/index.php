@@ -32,6 +32,3 @@ if ($ringAmount >= 4) {
 } else {
 	echo "An amount of rings in the lock can not be less than 4.\n";
 }
-
-
-
