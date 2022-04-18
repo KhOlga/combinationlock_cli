@@ -1,0 +1,21 @@
+{
+    "name": "okh/compiler-cli",
+    "description": "The CombinationLock CLI Application provides a simple functionality for generating a value of the lock.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Okh\\CombinationLock\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Olha Kharabet",
+            "email": "kharabet.olga@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/console": "^6.0"
+    }
+}

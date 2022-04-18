@@ -4,13 +4,11 @@ try
 {
 	$pharFile = 'combinationlock.phar';
 
-	if (file_exists($pharFile))
-	{
+	if (file_exists($pharFile)) {
 		unlink($pharFile);
 	}
 
-	if (file_exists($pharFile . '.gz'))
-	{
+	if (file_exists($pharFile . '.gz')) {
 		unlink($pharFile . '.gz');
 	}
 
